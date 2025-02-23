@@ -8,8 +8,8 @@ class AppDrawer extends StatelessWidget {
     return CustomDrawer(
       header: DrawerHeader(
         decoration: BoxDecoration(color: Colors.blue),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Icon(Icons.account_circle, size: 80, color: Colors.white),
             SizedBox(height: 10),
