@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:reusable_component/reusable_component/custom_icon_button.dart';
 import 'package:reusable_component/reusable_component/custom_text.dart';
+import 'package:reusable_component/usage_example/app_drawer.dart';
 
 import '../reusable_component/custom_appbar.dart';
 
@@ -14,20 +16,33 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.blue,
         textColor: Colors.white,
         actions: [
-          IconButton(
-            icon: const Icon(Icons.search),
+          CustomIconButton(
+            icon: Icons.search,
             onPressed: () => print('بحث'),
           ),
-          IconButton(
-            icon: const Icon(Icons.settings),
+          CustomIconButton(
+            icon: Icons.settings,
             onPressed: () => print('الإعدادات'),
           ),
         ],
       ),
+      drawer: AppDrawer(),//قمنا باستعاء كلاس الشريط الجانبي هنا لاستخدامه
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            CustomIconButton(
+                icon: Icons.home,
+                onPressed: () {
+                  print('الضغط على زر الصفحة الرئيسية');
+                }),
+                SizedBox(height: 15,),
+            CustomIconButton(
+                icon: Icons.settings,
+                onPressed: () {
+                  print('الضغط على زر الصفحة الاعدادت');
+                }),
+            SizedBox(height: 10,),
             CustomText(
               text: "مرحباً بك في تطبيق Flutter! 🚀",
               fontSize: 20,
