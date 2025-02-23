@@ -13,7 +13,7 @@ class AppDrawer extends StatelessWidget {
           children: [
             Icon(Icons.account_circle, size: 80, color: Colors.white),
             SizedBox(height: 10),
-            CustomText(text:  "مرحبًا بك!", ),
+            CustomText(text:  "مرحبًا بك! مبرمج",fontWeight: FontWeight.bold, ),
           ],
         ),
       ),
