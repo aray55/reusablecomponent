@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      drawer: AppDrawer(),//قمنا باستعاء كلاس الشريط الجانبي هنا لاستخدامه
+      drawer: AppDrawer(), //قمنا باستدعاء كلاس الشريط الجانبي هنا لاستخدامه
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -36,13 +36,17 @@ class HomePage extends StatelessWidget {
                 onPressed: () {
                   print('الضغط على زر الصفحة الرئيسية');
                 }),
-                SizedBox(height: 15,),
+            SizedBox(
+              height: 15,
+            ),
             CustomIconButton(
                 icon: Icons.settings,
                 onPressed: () {
                   print('الضغط على زر الصفحة الاعدادت');
                 }),
-            SizedBox(height: 10,),
+            SizedBox(
+              height: 10,
+            ),
             CustomText(
               text: "مرحباً بك في تطبيق Flutter! 🚀",
               fontSize: 20,
@@ -56,6 +60,7 @@ class HomePage extends StatelessWidget {
               fontSize: 16,
               color: Colors.grey,
             ),
+           
           ],
         ),
       ),

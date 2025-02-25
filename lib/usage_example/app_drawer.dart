@@ -28,6 +28,7 @@ class AppDrawer extends StatelessWidget {
           title: "الإعدادات",
           icon: Icons.settings,
           onTap: () => _navigateTo(context, "Settings"),
+          
         ),
         DrawerItem(
           title: "المساعدة",
